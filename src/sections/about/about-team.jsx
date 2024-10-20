@@ -5,17 +5,16 @@ import { m } from 'framer-motion';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 
-import { _socials, _carouselsMembers } from 'src/_mock';
+import { _socials } from 'src/_mock';
 
 import { Image } from 'src/components/image';
-import { Iconify, SocialIcon } from 'src/components/iconify';
+import { SocialIcon } from 'src/components/iconify';
+import { useCarousel } from 'src/components/carousel';
 import { varFade, MotionViewport } from 'src/components/animate';
-import { Carousel, useCarousel, CarouselArrowFloatButtons } from 'src/components/carousel';
 
 import { AboutTeamHero } from './about-team-hero';
 
@@ -51,7 +50,7 @@ export function AboutTeam() {
           </Typography>
         </m.div>
 
-        <Stack sx={{ position: 'relative' }}>
+        {/* <Stack sx={{ position: 'relative' }}>
           <CarouselArrowFloatButtons
             {...carousel.arrows}
             options={carousel.options}
@@ -83,7 +82,7 @@ export function AboutTeam() {
           sx={{ mx: 'auto' }}
         >
           All members
-        </Button>
+        </Button> */}
       </Container>
     </>
   );
