@@ -12,10 +12,8 @@ import { ProductsSection } from 'src/sections/our-products/product-sections';
 import { font } from '../fonts';
 import { OurValues } from '../our-values';
 import { NewHero } from '../hero/new-hero';
-import { Supports } from '../supports/Supports';
 import { ContactInformation } from '../contact-info';
 import { BenefitsGrid } from '../benefits-grid/BenefitsGrid';
-import { FeatureToggles } from '../feature-toggles/FeatureToggles';
 
 export default function NewHome() {
   return (
@@ -23,9 +21,6 @@ export default function NewHome() {
       <main className={`${font.className} overflow-hidden`}>
         <NewHero />
         <AboutWhat />
-        <div className="pt-12 pb-24 space-y-36 bg-zinc-50 md:pt-16">
-          <FeatureToggles />
-        </div>
         <div className="bg-zinc-50">
           <ProductsSection />
           <BrandsWeWorkWith />
@@ -34,7 +29,6 @@ export default function NewHome() {
         <div className="pt-12 pb-24 space-y-36 bg-zinc-50 md:pt-16">
           {/* <Stats /> */}
 
-          <Supports />
           <BenefitsGrid />
           {/* <Pricing /> */}
           {/* <BlogCarousel /> */}
